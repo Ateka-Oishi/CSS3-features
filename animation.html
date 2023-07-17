@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation</title>
+    <title>Document</title>
     <style>
         @keyframes ping-pong {
             from{
@@ -15,30 +15,28 @@
             }
         }
 
-@keyframes bounce {
-    0%{
+        @keyframes bounce {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                  left: 150px;
+                  top:200px;
+                  background-color: red; 
+            }
+            50%{
+                left:300px;
+                top:0px;
+                background-color: yellow;
+            }
+            100%{
+                left:500px;
+                top:200px;
+                background-color: red;
+            }
+        }
 
-        top: 0px;
-        left: 0px;
-    }
-    25%{
-       left: 150px;
-       top: 200px; 
-       background-color: red;
-    }
-    50%{
-
-        left: 300px;
-        top: 0px;
-        background-color: yellow;
-    }
-    100%{
-
-        left: 500px;
-        top: 200px;
-    }
-    
-}
         .stage{
             width: 600px;
             height: 300px;
@@ -52,7 +50,7 @@
             background-color: yellow;
             position: relative;
             /* animation: ping-pong 2s ease-in-out 1s infinite alternate; */
-            animation: bounce 3s ease-in-out 0 infinite alternate;
+            animation: bounce 3s ease-in-out 1s infinite alternate;
         }
     </style>
 </head>
